@@ -1,0 +1,233 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+.bodyContainerHeader{
+    width:100%;
+    height: 8vh;
+    background-color:  #fcf6f6;
+    margin-left: 15px;
+}
+
+#toggleButton{
+    border-color: #0A55C6;
+    background-color: white;
+    width: 15%;
+    height: 5vh;
+    color: #414344;
+    padding: 5px;
+    margin: 15px;
+}
+
+.register-light{
+    margin-left: 15px;
+}
+
+.bodyContainer{
+   display:  flex;
+   /* flex-direction: row;  */
+   justify-content: center;
+   color: #2D2F30;
+   background-color: rgb(252, 246, 246);
+   position: relative;
+   height: 150vh;
+
+}
+
+/* .bear{
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    width: 50%;
+    height:100%;
+    left: 0;
+    top: 0;
+    margin-left: 25px;
+} */
+
+.bearImg{
+    width: 50%;
+    position: absolute;
+    top: 10%;
+    margin-left: 15px;
+}
+img{
+    position: absolute;    
+}
+
+.formContainer{
+   /* display:  flex; */
+   /* flex-direction: row;  */
+   background-color: white;
+   /* position: relative; */
+   /* height: 100vh; */
+   position: absolute; /* Изменено на absolute */
+    top: 35%;
+    left: 80vh;
+    transform: translate(50%, -50%);
+    max-width: 450px; /* Примерная ширина формы */
+    padding: 20px;
+    box-shadow: 0 0 10px #ccc; /* Тень для формы */
+    border-radius: 10px; 
+}
+.form{
+    /* position: absolute;
+    top: 50%;
+    transform: translate(50%, -50%); */
+    background-color: white;
+    /* position: absolute; */ 
+      
+}
+
+.formHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerText{
+    font-size: 25px;
+    font-weight: 700;
+    color: #414344;    
+}
+
+.underlineText{
+    font-size: 14px;
+    font-weight: 400;
+    color: #676767;
+    padding: 5px;
+}
+.formBody,
+.nameContainer,
+.emailContainer,
+.passwordContainer,
+.passwordConfirmContainer {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 400;
+    color: #414344;
+}
+
+.formBody,
+.nameContainer,
+.emailContainer,
+.passwordContainer,
+.passwordConfirmContainer .input{
+    border: 1px;
+    border: #E3E1E1;
+    border-radius: 4px;
+}
+
+/* .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 400;
+    color: #B0B0B0;
+
+} */
+
+/* The container */
+.container{
+    display: block;
+    position: relative;
+    padding-left: 55px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    color: #B0B0B0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #dad9d9;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: grey;
+
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: grey;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+.highlighted {
+    color: #2D76E2; 
+    text-decoration: underline; 
+}
+
+.registerButton{
+    width: 367px;
+    height: 60px;
+    background-color: #0A55C6;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #FCFCFC;
+    border: none;
+    border-radius: 4px;
+}
+
+.divider {
+    width: 100%;
+    height: 1px; 
+    background-color: #ccc; 
+    margin: 10px 0; 
+}
